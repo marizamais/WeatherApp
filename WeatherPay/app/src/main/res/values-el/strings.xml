@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherPay</string>
+    <string name="logo">Novidea logo</string>
+    <string name="enter">Είσοδος</string>
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">←</string>
+    <string name="btn_ok">OK</string>
+    <string name="back">Back</string>
+    <string name="exit">Exit</string>
+    <string name="other">Other</string>
+    <string name="home">Home</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="amount">Ποσό</string>
+
+    <string name="mid">MID: %1$s</string>
+    <string name="tid">TID: %1$s</string>
+    <string name="sn">SN: %1$s</string>
+    <string name="grey_level">Θέσε Grey Level</string>
+
+    <string name="grey_level_value">%1$s/500</string>
+    <string name="challenge">Μάντεψε πόσους °C!</string>
+    <string name="temperature">Θερμοκρασία</string>
+    <string name="actual_temperature">Πραγματική Θερμοκρασία</string>
+    <string name="temperature_value">%1$s °C</string>
+    <string name="feels_like">Αίσθηση</string>
+    <string name="temperature_details">Απλά %1$s</string>
+    <string name="humidity">Υγρασία</string>
+    <string name="humidity_value">%1$s %2$s</string>
+    <string name="wind_speed">Ταχύτητα Ανέμου</string>
+    <string name="wind_speed_value">%1$s kts</string>
+
+    <string name="sn_">SN:</string>
+    <string name="printer">Εκτυπωτής:</string>
+    <string name="physical_keyboard">Φυσικό πληκτρολόγιο:</string>
+    <string name="os">OS:</string>
+    <string name="model_name">Όνομα Μοντέλου:</string>
+    <string name="print_merchant_receipt">Εκτύπωση Απόδειξης Εμπόρου</string>
+    <string name="print_customer_receipt">Εκτύπωση Απόδειξης Καταναλωτή</string>
+    <string name="receipt_concluding_message">Συμπεριλαμβανόμενο μήνυμα απόδειξης</string>
+    <string name="enter_message">Εισαγωγή Μηνύματος</string>
+
+    <string name="internet">Internet</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="wifi">WiFi</string>
+    <string name="cellular">Mobile Data</string>
+    <string name="latency">Latency</string>
+    <string name="ms">%1$s ms</string>
+    <string name="avr_ms">%1$s avr ms</string>
+
+    <string name="pipe"> | </string>
+
+    <string name="total_amount">Συνολικό Ποσό</string>
+    <string name="batch_management">Διαχείριση Batch</string>
+    <string name="unsettled">Unsettled</string>
+    <string name="settled">Settled</string>
+    <string name="close_batch">Κλείσιμο Batch</string>
+    <string name="reprint_batch">Επανεκτύπωση Batch</string>
+    <string name="payment">Πληρωμή</string>
+    <string name="time">00:00</string>
+
+    <string name="congrats">Συγχαρητήρια!</string>
+    <string name="approved">Approved</string>
+    <string name="initialise">Αρχικοποίηση…</string>
+    <string name="print">Εκτύπωση</string>
+
+    <string name="long_text">Αυτό είναι για κείμενο με πολλές γραμμές. Για παράδειγμα, αυτό το κείμενο περιέχει όλο το περιεχόμενο (αν επιλεγεί από τον χρήστη) και εμφανίζει το περιεχόμενο στο σύνολό του, ενώ το επόμενο παράδειγμα δεν συμπεριφέρεται με τον ίδιο τρόπο.</string>
+    <string name="long_text_not">Αυτό είναι για κείμενο με πολλές γραμμές. Για παράδειγμα, αυτό το κείμενο δεν περιέχει το περιεχόμενό του.</string>
+
+    <string name="zero_euro">€ 0,00</string>
+    <string name="purchase">Αγορά</string>
+    <string name="tip">Φιλοδώρημα</string>
+    <string name="cancellation">Ακύρωση</string>
+    <string name="refund">Επιστροφή</string>
+    <string name="total_transaction">Σύνολο συναλλαγών</string>
+    <string name="total_tip_amount">Συνολικό Ποσό Φιλοδωρημάτων</string>
+    <string name="total">Σύνολο</string>
+
+    <string name="test">Τεστ</string>
+    <string name="beep">Beep</string>
+    <string name="network">Δίκτυο</string>
+
+    <string name="transaction_list">Λίστα Συναλλαγών</string>
+
+    <string name="pos_device_information">Πληροφορίες POS</string>
+    <string name="print_management">Διαχείριση Εκτύπωσης</string>
+    <string name="concluding_message">Ενσωματωμένο Μήνυμα</string>
+    <string name="reboot">Επανεκκίνηση</string>
+
+    <string name="beep_number">Beep %1$d</string>
+    <string name="multiple_beeps">Πολλαπλά Beeps</string>
+
+    <string name="text_receipt">Απόδειξη Κειμένου</string>
+    <string name="multiline_text_receipt">Απόδειξη Κειμένου Πολλαπλών Γραμμών</string>
+    <string name="bars_receipt">Απόδειξη Γραμμών</string>
+    <string name="logo_receipt">Απόδειξη Λογότυπου</string>
+
+    <string name="merchant_copy"> ΑΝΤΙΓΡΑΦΟ ΕΜΠΟΡΟΥ</string>
+    <string name="reprint_receipt"> ΕΠΑΝΕΚΤΥΠΩΣΗ ΑΠΟΔΕΙΞΗΣ</string>
+    <string name="customer_copy"> ΑΝΤΙΓΡΑΦΟ ΠΕΛΑΤΗ</string>
+
+    <string name="enter_tip"> Συμπλήρωσε φιλοδώρημα</string>
+
+    <string name="english">Αγγλικά</string>
+    <string name="greek">Ελληνικά</string>
+
+    <string name="language_selection">Επιλογή Γλώσσας</string>
+
+    <string name="register_card">Καταχώρηση Κάρτας</string>
+
+    <string name="insert_card_number">Εισάγετε τον αριθμό της κάρτας</string>
+
+    <string name="register">Καταχώρηση</string>
+    <string name="iris">Iris</string>
+    <string name="send">Στείλε</string>
+
+    <string name="select_card_number">Επέλεξε τον αριθμό της κάρτας</string>
+</resources>

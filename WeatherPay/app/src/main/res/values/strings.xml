@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherPay</string>
+    <string name="logo">Novidea logo</string>
+    <string name="enter">Enter</string>
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">←</string>
+    <string name="btn_ok">OK</string>
+    <string name="back">Back</string>
+    <string name="exit">Exit</string>
+    <string name="other">Other</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="amount">Amount</string>
+
+    <string name="mid">MID: %1$s</string>
+    <string name="tid">TID: %1$s</string>
+    <string name="sn">SN: %1$s</string>
+    <string name="grey_level">Set Grey Level</string>
+
+    <string name="grey_level_value">%1$s/500</string>
+    <string name="challenge">Guess in °C to win!</string>
+    <string name="temperature">Temperature</string>
+    <string name="actual_temperature">Actual Temperature</string>
+    <string name="temperature_value">%1$s °C</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="temperature_details">Just %1$s</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidity_value">%1$s %2$s</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="wind_speed_value">%1$s kts</string>
+
+    <string name="sn_">SN:</string>
+    <string name="printer">Printer:</string>
+    <string name="physical_keyboard">Physical Keyboard:</string>
+    <string name="os">OS:</string>
+    <string name="model_name">Model Name:</string>
+    <string name="print_merchant_receipt">Print Merchant Receipt</string>
+    <string name="print_customer_receipt">Print Customer Receipt</string>
+    <string name="receipt_concluding_message">Receipt Concluding Message</string>
+    <string name="enter_message">Enter Message</string>
+
+    <string name="internet">Internet</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="wifi">WiFi</string>
+    <string name="cellular">Mobile Data</string>
+    <string name="latency">Latency</string>
+    <string name="ms">%1$s ms</string>
+    <string name="avr_ms">%1$s avr ms</string>
+
+    <string name="pipe"> | </string>
+
+    <string name="total_amount">Total Amount</string>
+    <string name="batch_management">Batch Management</string>
+    <string name="unsettled">Unsettled</string>
+    <string name="settled">Settled</string>
+    <string name="close_batch">Close Batch</string>
+    <string name="reprint_batch">Reprint Batch</string>
+    <string name="payment">Payment</string>
+    <string name="time">00:00</string>
+
+    <string name="congrats">Congratulations!</string>
+    <string name="approved">Approved</string>
+    <string name="initialise">Initializing…</string>
+    <string name="print">Print</string>
+
+    <string name="long_text">This is for text with multiple lines. For example this text wraps its content (if selected by the user) and shows the content in its entirety, while the next example doesn\'t behave in the same way.</string>
+    <string name="long_text_not">This is for text with multiple lines. For example this text does not wrap its content.</string>
+    <string name="zero_euro">€ 0,00</string>
+    <string name="purchase">Purchase</string>
+    <string name="tip">Tip</string>
+    <string name="cancellation">Cancellation</string>
+    <string name="refund">Refund</string>
+    <string name="total_transaction">Total Transaction</string>
+    <string name="total_tip_amount">Total Tip Amount</string>
+    <string name="total">Total</string>
+
+    <string name="test">Test</string>
+    <string name="beep">Beep</string>
+    <string name="network">Network</string>
+
+    <string name="transaction_list">Transaction List</string>
+
+    <string name="pos_device_information">POS Device Information</string>
+    <string name="print_management">Print Management</string>
+    <string name="concluding_message">Concluding Message</string>
+    <string name="reboot">Reboot</string>
+
+    <string name="beep_number">Beep %1$d</string>
+    <string name="multiple_beeps">Multiple Beeps</string>
+
+    <string name="text_receipt">Text Receipt</string>
+    <string name="multiline_text_receipt">Multiline Text Receipt</string>
+    <string name="bars_receipt">Bars Receipt</string>
+    <string name="logo_receipt">Logo Receipt</string>
+
+    <string name="merchant_copy"> MERCHANT COPY</string>
+    <string name="reprint_receipt"> REPRINT RECEIPT</string>
+    <string name="customer_copy"> CUSTOMER COPY</string>
+
+    <string name="enter_tip"> Enter tip</string>
+
+    <string name="english">English</string>
+    <string name="greek">Greek</string>
+
+    <string name="language_selection">Language Selection</string>
+
+    <string name="register_card">Card Register</string>
+
+    <string name="insert_card_number"> Insert Card Number </string>
+
+    <string name="register">Register</string>
+    <string name="iris">Iris</string>
+    <string name="send">Send</string>
+    <string name="select_card_number">Select card\'s number</string>
+
+</resources>

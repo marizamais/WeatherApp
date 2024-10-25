@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beep_list"
+    android:name="gr.novidea.weatherpay.ui.fragments.BeepFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_container_spacing"
+    tools:context=".ui.fragments.BeepFragment"
+    android:background="@color/light_blue"
+    tools:listitem="@layout/fragment_button" />

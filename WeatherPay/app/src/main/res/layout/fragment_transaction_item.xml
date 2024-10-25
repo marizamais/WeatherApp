@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimaryTransparent2"
+        app:cardElevation="@dimen/elevation_card"
+        app:cardCornerRadius="@dimen/corner_radius_card"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="@dimen/main_container_spacing"
+        android:layout_marginEnd="@dimen/main_container_spacing"
+        android:layout_marginBottom="@dimen/button_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/text_space">
+
+            <TextView
+                android:id="@+id/transactionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/app_name"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_xsmall"
+
+                app:layout_constraintEnd_toStartOf="@+id/amount"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/number_zero"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/transactionId"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/app_name"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_xsmall"
+
+                app:layout_constraintEnd_toStartOf="@+id/type"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/transactionId" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/number_zero"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_xsmall"
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardNumber"
+                app:layout_constraintTop_toTopOf="@id/cardNumber" />
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/app_name"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_xsmall"
+
+                app:layout_constraintEnd_toStartOf="@+id/status"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardNumber" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/text_space"
+                android:paddingBottom="@dimen/text_space"
+                android:text="@string/number_zero"
+                android:textColor="@color/blueGrey2"
+                android:textSize="@dimen/text_size_xsmall"
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/date"
+                app:layout_constraintTop_toTopOf="@id/date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

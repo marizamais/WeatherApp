@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_nav_graph"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="gr.novidea.weatherpay.ui.fragments.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings_list" >
+        <action
+            android:id="@+id/action_settingsFragment_to_POSDeviceInformationFragment"
+            app:destination="@id/POSDeviceInformationFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_printerManagementFragment"
+            app:destination="@id/printerManagementFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_concludingMessageFragment"
+            app:destination="@id/concludingMessageFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/POSDeviceInformationFragment"
+        android:name="gr.novidea.weatherpay.ui.fragments.POSDeviceInformationFragment"
+        android:label="@string/pos_device_information"
+        tools:layout="@layout/fragment_p_o_s_device_information" />
+    <fragment
+        android:id="@+id/printerManagementFragment"
+        android:name="gr.novidea.weatherpay.ui.fragments.PrinterManagementFragment"
+        android:label="@string/print_management"
+        tools:layout="@layout/fragment_printer_management" />
+    <fragment
+        android:id="@+id/concludingMessageFragment"
+        android:name="gr.novidea.weatherpay.ui.fragments.ConcludingMessageFragment"
+        android:label="@string/concluding_message"
+        tools:layout="@layout/fragment_concluding_message" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="gr.novidea.weatherpay.ui.fragments.LanguageFragment"
+        android:label="@string/language_selection"
+        tools:layout="@layout/fragment_language" />
+</navigation>

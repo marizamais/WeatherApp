@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/batchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_container_spacing"
+        android:layout_marginRight="@dimen/main_container_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/totalAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toTopOf="@id/batchButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_zero"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_large"
+            app:layout_constraintBottom_toBottomOf="@id/totalAmountLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/totalAmountLabel" />
+
+        <Button
+            android:id="@+id/batchButton"
+            style="@style/MainButton"
+            android:layout_marginVertical="@dimen/main_container_spacing"
+            android:text="@string/batch_management"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalAmount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:dividerColor="@color/blueGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/batchContainer" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/unsettled"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/button_toggle_background"
+            android:text="@string/unsettled"
+            android:textColor="@drawable/button_toggle_color"
+            app:icon="@drawable/check"
+            app:iconSize="12dp"
+            app:iconPadding="1dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="8dp"
+            app:iconTint="@color/white" />
+
+        <Button
+            android:id="@+id/settled"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/button_toggle_background"
+            android:text="@string/settled"
+            android:textColor="@drawable/button_toggle_color"
+            app:icon="@drawable/check"
+            app:iconPadding="1dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="8dp"
+            app:iconSize="12dp"
+            app:iconTint="@color/white" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@id/filters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/filters"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:backgroundTint="@color/white"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactions_list"
+        android:name="gr.novidea.weatherpay.ui.fragments.TransactionsListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/main_container_spacing"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/filters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:context=".ui.fragments.TransactionsFragment"
+        tools:listitem="@layout/fragment_transaction_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

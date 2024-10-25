@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Transaction</string>
+
+    <string name="wait">Please wait</string>
+    <string name="connecting">Connecting to server</string>
+
+</resources>

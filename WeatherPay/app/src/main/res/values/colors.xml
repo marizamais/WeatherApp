@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#ABBAC7</color>
+    <color name="darkGrey">#49454F</color>
+    <color name="lightGrey">#7881A3</color>
+
+    <color name="colorPrimary">#0E1E38</color>
+    <color name="colorPrimaryTransparent">#C3CED8</color>
+
+    <color name="blueGrey">#8A212861</color>
+
+<!--    <color name="colorPrimaryTransparent2">#1A0E3456</color>-->
+<!--    we need to use solid color for the card background-->
+    <color name="colorPrimaryTransparent2">#E0E4E8</color>
+
+    <color name="blueGrey2">#DE212861</color>
+
+    <color name="orange">#D8AB5D</color>
+
+    <color name="blue">#709EC6</color>
+    <color name="light_blue">#DFE9F2</color>
+
+</resources>

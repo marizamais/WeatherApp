@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/greyLevelLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingHorizontal="@dimen/main_container_spacing"
+        android:paddingTop="@dimen/main_container_spacing"
+        android:text="@string/grey_level"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/greyLevelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/main_container_spacing"
+        android:paddingBottom="@dimen/main_container_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greyLevelLabel">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/greyLevelSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:value="150"
+            android:valueFrom="0"
+            android:valueTo="500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/greyLevelValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:thumbHeight="20dp"
+            app:thumbWidth="20dp"
+            app:trackHeight="4dp"
+            app:trackStopIndicatorSize="0dp" />
+
+        <TextView
+            android:id="@+id/greyLevelValue"
+            android:layout_width="@dimen/corner_radius"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/grey_level_value"
+            android:textSize="@dimen/text_size_mid"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/greyLevelSlider"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dashed_line"
+        app:layout_constraintTop_toBottomOf="@+id/greyLevelContainer" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/print_list"
+        android:name="gr.novidea.weatherpay.ui.fragments.PrintFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/main_container_spacing"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/greyLevelContainer"
+        tools:context=".ui.fragments.PrintFragment"
+        tools:listitem="@layout/fragment_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
