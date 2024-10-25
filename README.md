@@ -13,8 +13,11 @@ The Weather Payment Application also features real-time transaction tracking, de
 receipts, and comprehensive sales reports, making it an essential tool for streamlining the payment
 operations of any weather shop.
 
-In order for a transaction to succeed, one needs to predict exactly the current temperature in Celcious 
-with 2 decimal persision! Good luck!
+In order for a transaction to succeed, one needs to predict the current temperature in Celcious 
+rounded to the closest integer! Good luck! 🍀
+
+In case of a successful transaction, the customer will be able to see the weather icon printed on the receipt.
+To enable receipts use the toggle buttons under Settings/Print Management.
 
 ## Table of contents
 

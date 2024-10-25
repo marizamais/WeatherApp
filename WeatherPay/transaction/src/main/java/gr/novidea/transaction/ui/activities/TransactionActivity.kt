@@ -257,7 +257,7 @@ class TransactionActivity : AppCompatActivity() {
             val temperature = intent.getDoubleExtra("temperature", 0.0)
             val amount = (transaction.transaction?.amount?.toDouble() ?: 0.0) / 100
 
-            if (amount == temperature) {
+            if (amount.toInt() == temperature.toInt()) {
                 resultIntent.putExtra("result", "000")
             } else {
                 resultIntent.putExtra("result", "111")
